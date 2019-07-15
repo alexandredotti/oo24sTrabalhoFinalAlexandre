@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="275.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.utfpr.pb.oo24s.aula4.javafx.controller.FXMLContaPagarCadastroController">
+   <children>
+      <Label layoutX="17.0" layoutY="7.0" text="Código" />
+      <Label layoutX="18.0" layoutY="128.0" text="Valor" />
+      <Label layoutX="17.0" layoutY="67.0" text="Tipo" />
+      <Label layoutX="19.0" layoutY="244.0" text="Observação" />
+      <TextField fx:id="textId" editable="false" layoutX="16.0" layoutY="33.0" prefHeight="25.0" prefWidth="238.0" />
+      <TextField fx:id="textValor" layoutX="17.0" layoutY="154.0" prefHeight="25.0" prefWidth="238.0" />
+      <TextArea fx:id="textObs" layoutX="18.0" layoutY="271.0" prefHeight="57.0" prefWidth="238.0" />
+      <ComboBox fx:id="comboTipo" layoutX="17.0" layoutY="93.0" prefHeight="25.0" prefWidth="238.0" />
+      <Button layoutX="195.0" layoutY="337.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="64.0" text="Salvar" />
+      <Button layoutX="123.0" layoutY="337.0" mnemonicParsing="false" onAction="#cancel" text="Cancelar" />
+      <Label layoutX="18.0" layoutY="188.0" text="Data de Vencimento" />
+      <DatePicker fx:id="DateVenc" layoutX="18.0" layoutY="211.0" />
+   </children>
+   <stylesheets>
+      <URL value="@/styles/style.css" />
+   </stylesheets>
+</AnchorPane>

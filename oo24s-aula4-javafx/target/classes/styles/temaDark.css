@@ -1,0 +1,19 @@
+.root{
+    -fx-background-color: black;
+}
+.button{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color: yellow;
+    -fx-text-fill: black;
+}
+.table-row-call{
+    -fx-background-color: gray;
+    -fx-text-fill: black;
+}
+.table-row-call:odd{
+    -fx-background-color: yellow;
+    -fx-text-fill: green;
+}

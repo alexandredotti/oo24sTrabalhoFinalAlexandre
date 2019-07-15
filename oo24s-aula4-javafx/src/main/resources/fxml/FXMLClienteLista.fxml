@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.utfpr.pb.oo24s.aula4.javafx.controller.FXMLClienteListaController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="NEVER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#newRecord" text="Novo">
+               <HBox.margin>
+                  <Insets left="20.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonEdit" mnemonicParsing="false" onAction="#edit" text="Editar">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#delete" text="Remover" />
+         </children>
+      </HBox>
+      <TableView fx:id="tableData" prefHeight="301.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="columnId" prefWidth="57.0" text="Código" />
+          <TableColumn fx:id="columnNome" prefWidth="267.0" text="Nome" />
+            <TableColumn fx:id="columnCpf" prefWidth="141.0" text="CPF" />
+            <TableColumn fx:id="columnTelefone" prefWidth="133.0" text="Telefone" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
