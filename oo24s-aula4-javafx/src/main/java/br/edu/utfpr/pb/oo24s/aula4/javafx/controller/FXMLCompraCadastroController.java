@@ -170,7 +170,9 @@ public class FXMLCompraCadastroController implements Initializable {
         compra.setData(dataCompra.getValue());
         compra.setFornecedor((Fornecedor) comboFornecedor.getSelectionModel().getSelectedItem());
         compra.setCompraProdutos(compraProdutoList);
-        this.openPagamento(new ContaPagar(), event);
+        ContaPagar cp = new ContaPagar();
+        compra.setContaPagar(cp);
+        this.openPagamento(cp, event);
         if (this.compraDao.isValid(compra)) {
             this.compraDao.save(compra);
             this.dialogStage.close();
